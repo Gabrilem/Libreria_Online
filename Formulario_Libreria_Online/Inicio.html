@@ -1,0 +1,280 @@
+<!--Iterfaz pagina inicio-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G&P Literatura Cristiana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/styles2.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <header class="p-3 text-white" style="background-color: #040404;">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none">
+                    <img src="./IMG/imgpaginas/Logo6G&P.png" alt="Logo" width="100" height="50" class="me-4">
+                    <span class="fs-2 d-block">G&P Literatura Cristiana
+                        <span class="d-block" style="font-style: italic; font-size: 0.4em;">¡Palabras que dan vida!</span>
+                    </span>                  
+                </a>               
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #252524;">
+                      Menu
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" style="background-color: rgb(243, 240, 240);">
+                      <li><button class="dropdown-item" type="button">Quienes Somos</button></li>
+                      <li><button class="dropdown-item" type="button">Categorias</button></li>
+                      <li><button class="dropdown-item" type="button">Ayuda</button></li>
+                      <li><button class="dropdown-item" type="button">Contacto</button></li>
+                    </ul>
+                </div>
+                <form class="d-flex">
+                    <input type="search" class="form-control form-control-dark me-2" placeholder="Buscar...">
+                    <a href="Carrito.html" class="btn btn-outline-light"><img src="./IMG/imgpaginas/carrito-de-compras.png" alt="Carrito" width="30"></a>
+                    <a href="#" class="btn btn-outline-light"><img src="./IMG/imgpaginas/usuario.png" alt="Usuario" width="30"></a>
+                </form>
+            </div>
+        </header>
+
+        <div class="d-flex" style="min-height: calc(80vh - 86px);"> 
+            <!-- Sidebar -->
+            <nav id="sidebar" class="flex-shrink-0 p-3" style="width: 350px;  position: sticky; top: 80px;">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item"><a href="#quienesSomos" class="nav-link text-white" data-bs-toggle="collapse">Quiénes Somos</a></li>
+                    <div class="collapse" id="quienesSomos">
+                        <li><a href="#" class="nav-link text-white ps-4">Nuestra Historia</a></li>
+                    </div>
+                    <li class="nav-item"><a href="#categorias" class="nav-link text-white" data-bs-toggle="collapse">Categorías</a></li>
+                    <div class="collapse" id="categorias">
+                        <li><a href="#" class="nav-link text-white ps-4">Biblias</a></li>
+                        <li><a href="#" class="nav-link text-white ps-4">Biblias de estudios</a></li>
+                        <li><a href="#" class="nav-link text-white ps-4">Biblias para niños</a></li>
+                        <li><a href="#" class="nav-link text-white ps-4">Teologia</a></li>
+                        <li><a href="#" class="nav-link text-white ps-4">Diccionarios</a></li>
+                        <li><a href="#" class="nav-link text-white ps-4">Comentarios</a></li>
+                        <li><a href="#" class="nav-link text-white ps-4">Libros</a></li>
+                        <li><a href="#" class="nav-link text-white ps-4">Libros para niños</a></li>
+                    </div>
+                    <li class="nav-item"><a href="#ayuda" class="nav-link text-white" data-bs-toggle="collapse">Ayuda</a></li>
+                    <div class="collapse" id="ayuda">
+                        <li><a href="#" class="nav-link text-white ps-4">Preguntas Frecuentes</a></li>
+                        <li><a href="#" class="nav-link text-white ps-4">Política de Devoluciones</a></li>
+                    </div>
+                    <li class="nav-item"><a href="#contacto" class="nav-link text-white" data-bs-toggle="collapse">Contacto</a></li>
+                    <div class="collapse" id="contacto">
+                        <li><a href="#" class="nav-link text-white ps-4">Email</a></li>
+                        <li><a href="#" class="nav-link text-white ps-4">Teléfono</a></li>
+                    </div>
+                </ul>
+            </nav>
+
+            <main class="flex-fill p-4">
+                <div class="row justify-content-center">
+                    <!-- Imagenes -->
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./IMG/Bibliasestudio/Bibliadeestudioparalamujer.jpg" class="card-img-top" alt="Bibliadeestudioparalamujer">
+                            <div class="card-body">
+                                <h5 class="card-title">Biblia de Esttudio Para ña mujer</h5>
+                                <p class="card-price">$000.000</p>
+                                <a href="Carrito.html" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./IMG/Bibliasestudio/Bibliadeestudioparamujeres.jpg" class="card-img-top" alt="Bibliadeestudioparamujeres">
+                            <div class="card-body">
+                                <h5 class="card-title">Biblia de estudio para mujeres</h5>
+                                <p class="card-price">$000.000</p>
+                                <a href="Carrito.html" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./IMG/Comentarios/Comentariosdelossalmos.jpg" class="card-img-top" alt="Comentariosdelossalmos">
+                            <div class="card-body">
+                                <h5 class="card-title">Comentarios de los salmos</h5>
+                                <p class="card-price">$000.000</p>
+                                <a href="Carrito.html" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./IMG/Libros/Elpoderdelacruz.png" class="card-img-top" alt="Elpoderdelacruz">
+                            <div class="card-body">
+                                <h5 class="card-title">El poder de la Cruz</h5>
+                                <p class="card-price">$000.000</p>
+                                <a href="Carrito.html" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./IMG/Biblias/Biblia ediciondepromesasPEQ.png" class="card-img-top" alt="Biblia ediciondepromesasPEQ">
+                            <div class="card-body">
+                                <h5 class="card-title">Biblia edicion promesas</h5>
+                                <p class="card-price">$000000</p>
+                                <a href="Carrito.html" class="btn btn-primary">Agragar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="IMG/Biblias/Bibliacompactaletragrande.png" class="card-img-top" alt="Bibliacompactaletragrande">
+                            <div class="card-body">
+                                <h5 class="card-title">Biblia compacta letra grande</h5>
+                                <p class="card-price">~000000</p>
+                                <a href="Carrito.html" class="btn btn-primary">Agragar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./IMG/Biblias/Bibliaedicioncompacta peq.png" class="card-img-top" alt="Bibliaedicioncompacta">
+                            <div class="card-body">
+                                <h5 class="card-title">Biblia edicion compacta Pequeña</h5>
+                                <p class="card-price">$0000000</p>
+                                <a href="Carrito.html" class="btn btn-primary">Agragar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./IMG/Biblias/Biblianegrabordedorado.png" class="card-img-top" alt="Biblianegrabordedorado">
+                            <div class="card-body">
+                                <h5 class="card-title">Biblia Negra</h5>
+                                <p class="card-price">$000000</p>
+                                <a href="Carrito.html" class="btn btn-primary">Agragar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./IMG/Libros/Diario para esposasjovenes.png" class="card-img-top" alt="Diario para esposasjovenes">
+                            <div class="card-body">
+                                <h5 class="card-title">CDiario para esposas jovenes</h5>
+                                <p class="card-price">$0000000</p>
+                                <a href="Carrito.html" class="btn btn-primary">Agragar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Formulario de ingreso -->
+            <aside class="flex-shrink-0 p-3" style="width: 350px; position: sticky; margin-top: 80px; right: 0;">
+                <div class="card mb-4" style="background-color: #d6d0d0b6;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Iniciar Sesión</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="loginTipoIdentificacion" class="form-label">Tipo de Identificación</label>
+                                <select id="loginTipoIdentificacion" class="form-select">
+                                    <option value="cc">Cédula de Ciudadanía</option>
+                                    <option value="ce">Cédula de Extranjería</option>
+                                    <option value="ti">Tarjeta de Identidad</option>
+                                    <option value="ti">Pasaporte</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="loginNumeroDocumento" class="form-label">Número de Documento</label>
+                                <input type="text" class="form-control" id="loginNumeroDocumento" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="loginPassword" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="loginPassword" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+                            <button type="submit" class="btn btn-primary w-100" style="background-color: rgb(88, 117, 150);">Continuar con FacebooK</button>
+                            <button type="submit" class="btn btn-primary w-100" style="background-color: rgb(207, 57, 57);">Continuar con Google</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Formulario de Registro -->
+                <div class="card" style="background-color: #d6d0d0b6;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Registro</h5>
+                        </form>-->
+                        <form action="./PHP/conexion2.php" method="post">
+                        <input type="hidden" name="accion" value="crear">
+
+                        <div class="mb-3">
+                            <label>Tipo de Identificación</label>
+                            <select name="Tipo_Identificacion" class="form-select">
+                                <option value="cc">Cédula de Ciudadanía</option>
+                                <option value="ce">Cédula de Extranjería</option>
+                                <option value="ti">Tarjeta de Identidad</option>
+                                <option value="ps">Pasaporte</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Identificación</label>
+                            <input type="number" name="Numero_Identificacion" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Nombres</label>
+                            <input type="text" name="Nombre" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Apellidos</label>
+                            <input type="text" name="Apellidos" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Email</label>
+                            <input type="email" name="Email" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Teléfono</label>
+                            <input type="text" name="Telefono" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Contraseña</label>
+                            <input type="password" name="Contraseña" class="form-control" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">Registrar</button>
+                    </form>
+
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer >
+        <div class="social">
+            <a href="#">
+                <img src="./IMG/imgpaginas/facebook.png" alt="Facebook" class="footer-img">
+            </a>
+            <a href="#">
+                <img src="./IMG/imgpaginas/linkedin.png" alt="LinkedIn" class="footer-img">
+            </a>
+            <a href="mailto:igabrieloficial7@gmail.com">
+                <img src="./IMG/imgpaginas/gmail.png" alt="Gmail" class="footer-img">
+            </a>
+            <a href="https://wa.me/+573154035782">
+                <img src="./IMG/imgpaginas/whatsapp.png" alt="WhatsApp" class="footer-img">
+            </a>
+        </div>
+        <h6>2024 Derechos reservados - G&P Literatura cristiana</h6>
+        <a href="./PHP/login_admin.php" class="btn btn-danger float-end">Acceso Admin</a>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

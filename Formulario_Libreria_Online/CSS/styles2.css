@@ -1,0 +1,111 @@
+
+.card {
+    background-color: #f2ecec;
+    border-radius: 5px;
+    margin: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un poco de profundidad */
+}
+.card-img-top {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    height: 300px; /* Fija la altura de la imagen */
+    object-fit: cover; /* Recorta la imagen para que se ajuste a las dimensiones especificadas */
+}
+.card-title,
+.card-price {
+    font-weight: bold; /* Aplica negrita */
+}
+.card-body {
+    text-align: left;
+    padding: 10px; 
+}
+.btn {
+    font-size: 0.8rem; 
+}
+.col-md-10 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container-fluid {
+    padding: 0;
+}
+.form-control {
+    border: 2px solid #8B0000;
+    border-radius: 5px;
+}
+.form-control:focus {
+    border-color: #8B0000;
+    box-shadow: none;
+}
+.btn-primary, .btn-success {
+    background-color: #8B0000;
+    border: none;
+}
+.btn-primary:hover, .btn-success:hover {
+    background-color: #f0bd16;
+}
+#sidebar {
+    width: 250px;
+    background-color: #111111;
+    position: fixed;
+    top: 60px; /* Alinea el sidebar justo debajo del encabezado */
+    left: 0;
+    height: calc(30vh - 20px); /* Ajusta la altura del sidebar para ocupar el espacio restante */
+    padding-top: 20px;
+    overflow-y: auto; /* Permite el desplazamiento si el contenido es largo */
+    z-index: 800;
+}
+#sidebar .nav-link {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+#sidebar .nav-link:hover {
+    background-color: #f0bd16;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+.container-fluid {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+main {
+    margin-left: 20px; /* Deja espacio para el sidebar */
+    padding: 20px;
+    margin-top: 80px; /* Alinea el contenido principal debajo del encabezado */
+}
+header {
+    width: 100%;
+    background-color: #8B0000;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+footer {
+    background-color: #8B0000;
+    height: 70px; /* Altura fija */
+    padding: 0.2%; /* Ajusta el padding */
+    font-size: 18px; /* Ajusta el tamaño del texto */
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+footer .social a {
+    margin: 0 15px;
+}
+footer .social img {
+    width: 40px; /* Cambia el ancho de las imágenes */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    vertical-align: middle; /* Alinea las imágenes verticalmente */
+}
