@@ -59,8 +59,8 @@ http://localhost/Formulario_Libreria_Online/Inicio.php
 ## 🔐 Accesos para pruebas
 
 **Administrador:**
-- Usuario: `admin` o `admin2`
-- Contraseña: `admin`
+- Usuario: `admin2`
+- Contraseña: `admin123456`
 
 **Cliente:**
 - Regístrate desde la propia plataforma
