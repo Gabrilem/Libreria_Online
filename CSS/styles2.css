@@ -1,0 +1,267 @@
+
+.card {
+    background-color: #f2ecec;
+    border-radius: 5px;
+    margin: 10px;
+    width: 65%; /*Espacio entre tarjetas*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un poco de profundidad */
+}
+.card-img-top {
+    width: 75%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    height: 200px; /* Fija la altura de la imagen */
+    object-fit: cover; /* Recorta la imagen para que se ajuste a las dimensiones especificadas */
+}
+.card-title,
+.card-price {
+    font-weight: bold; /* Aplica negrita */
+}
+.card-body {
+    text-align: left;
+    padding: 10px; 
+}
+.btn {
+    font-size: 1rem; /*Tamaño boton*/
+}
+.col-md-10 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container-fluid {
+    padding: 0;
+}
+.form-control {
+    border: 2px solid #0c0c0c;
+    border-radius: 5px;
+}
+.form-control:focus {
+    border-color: #050505;
+    box-shadow: none;
+}
+/* Botones en negro con hover amarillo */
+.btn, .btn-outline-light, .dropdown-toggle, .nav-link, .btn-danger {
+    background-color: #000000 !important;
+    color: #FFD700 !important;
+    border: none !important;
+}
+
+.btn:hover, .btn-outline-light:hover, .dropdown-toggle:hover, .nav-link:hover, .btn-danger:hover {
+    background-color: #FFD700 !important;
+    color: #000 !important;
+}
+
+#sidebar {
+    width: 250px;
+    background-color: #111111;
+    position: fixed;
+    top: 60px; /* Alinea el sidebar justo debajo del encabezado */
+    left: 0;
+    height: calc(30vh - 20px); /* Ajusta la altura del sidebar para ocupar el espacio restante */
+    padding-top: 20px;
+    overflow-y: auto; /* Permite el desplazamiento si el contenido es largo */
+    z-index: 800;
+}
+#sidebar .nav-link {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+#sidebar .nav-link:hover {
+    background-color: #f0bd16;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+.container-fluid {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+main {
+    margin-left: 20px; /* Deja espacio para el sidebar */
+    padding: 20px;
+    margin-top: 80px; /* Alinea el contenido principal debajo del encabezado */
+}
+header {
+    width: 100%;
+    background-color: #0c0c0c;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+footer {
+    background-color: #030303;
+    height: 80px; /* Altura fija */
+    padding: 0.2%; /* Ajusta el padding */
+    font-size: 15px; /* Ajusta el tamaño del texto */
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+footer .social a {
+    margin: 0 15px;
+}
+footer .social img {
+    width: 40px; /* Cambia el ancho de las imágenes */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    vertical-align: middle; /* Alinea las imágenes verticalmente */
+}
+/* Iconos del carrito y usuario en el header */
+.form-control + .btn img {
+    filter: invert(1);
+    transition: filter 0.2s ease;
+}
+.form-control + .btn:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) hue-rotate(50deg);
+}
+/* Al final de styles2.css */
+.btn,
+.dropdown-toggle,
+.nav-link {
+  background-color: #000 !important;
+  color: #FFD700 !important;
+  border: none !important;
+}
+.btn:hover,
+.dropdown-toggle:hover,
+.nav-link:hover {
+  background-color: #FFD700 !important;
+  color: #000 !important;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #000 !important;
+}
+.dropdown-item {
+  color: #FFD700 !important;
+}
+.dropdown-item:hover {
+  background-color: #FFD700 !important;
+  color: #000 !important;
+}
+
+/* Footer fix si lo cambias también */
+footer {
+  background-color: #000 !important;
+  color: #FFD700 !important;
+}
+
+.btn-admin {
+    background-color: #000;         /* negro */
+    color: #FFD700;                 /* amarillo */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-admin:hover {
+    background-color: #FFD700;      /* amarillo */
+    color: #000;                    /* negro */
+}
+.contenedor-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.form-login {
+  max-width: 400px;
+  width: 80%;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.form-registro {
+  max-width: 320px;
+  width: 180%;
+  margin: 120px auto;
+  background-color: #d6d0d0b6;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  height: auto; /* 🔧 evita que se alargue */
+}
+
+
+.form-registro .form-control {
+  margin-bottom: 5px;
+}
+.user-icon {
+  background-color: #000;
+  color: #FFD700;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+.alert.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+/*Formulario registro*/
+/* Centrado total del formulario */
+main.contenedor-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 95vh;
+  padding: 40px 20px;
+  background-color: #f5f6f7;
+}
+
+.form-registro {
+  width: 500%;
+  max-width: 700px;
+  background-color: #ffffff;
+  padding: 7px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-registro h5 {
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-registro .form-control,
+.form-registro .form-select {
+  margin-bottom: 10px;
+}
+
+.form-registro .btn {
+  width: 100%;
+  background-color: #ffc107;
+  border: none;
+  color: black;
+  font-weight: bold;
+}
+#info-api {
+  border: 1px solid #cccccc;
+  background-color: #f9f9f9;
+}
+.card-body {
+  text-align: center;
+}
+
+#versiculo {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#location {
+  font-weight: bold;
+}
+
